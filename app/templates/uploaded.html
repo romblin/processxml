@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block meta %}
+<script type="text/javascript" src="{{ url_for('static', filename='jquery-1.12.4.min.js') }}"></script>
+<script type="text/javascript" src="{{ url_for('static', filename='status.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+<span id="token" style="display: none;">{{ token }}</span>
+<div id="content">
+    Файл добавлен в очередь
+</div>
+{% endblock %}
